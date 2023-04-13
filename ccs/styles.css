@@ -251,11 +251,14 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
 }
+/*****************************/
+/* Estilos pagina innovacion */
+/*****************************/
 
-/*Estilos pagina innovacion */
 
-
-/*Estilos pagina contacto */
+/***************************/
+/* Estilos pagina contacto */
+/***************************/
 
 .caja-fondo-contacto {
     background-image: url("../img/fondo-contacto.jpg");
