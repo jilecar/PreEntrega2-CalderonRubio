@@ -251,6 +251,36 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
 }
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .header{
+    grid-column: span 2;
+}
+
+.container .content{
+    grid-column: 1;
+}
+
+.content .article{
+    background-color: rgba(57, 157, 40, 0.6); ;
+    color: white;
+    margin-top: 20px;
+}
+
+.container .sidebar{
+    grid-column: 2;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 10;
+}
+
 /*****************************/
 /* Estilos pagina innovacion */
 /*****************************/
