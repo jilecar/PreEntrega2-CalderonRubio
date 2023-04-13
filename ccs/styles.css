@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/************************/
+/* Estilos pagina index */
+/************************/
+
+.caja-fondo-index {
+    background-image: url("../img/fondo-index.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-index {
+    width: 150px;
+    height: 120px;
+}
+
+.caja-index {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.titulo-index {
+    font-family: Helvetica bold, calibri, sans-serif;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+.subtitulo-index {
+    font-family: cream cake, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+@media(max-width:600px) {
+    .titulo-index {
+        font-size: 50px;
+    }
+
+    .subtitulo-index {
+        font-size: 25px;
+        justify-content: center;
+    }
+}
+
+.caja-btn-index {
+    display: block;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.btn-index {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/****************************/
+/* Estilos pagina conocenos */
+/****************************/
+
+.caja-fondo-conocenos {
+    background-image: url("../img/fondo-conocenos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo-conocenos {
+    color: gray;
+    text-align: center;
+}
+
+.subtitulo-conocenos {
+    color: green;
+    text-align: center;
+}
+
+.contenido-conocenos {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: 280px 1fr 100px;
+    grid-template-rows: repeat(4, 15vh);
+    grid-template-areas:
+        "caja-naranja caja-blanca caja-blanca"
+        "caja-naranja parrafo1 caja-opciones"
+        "caja-naranja parrafo2 caja-opciones"
+        "caja-naranja caja-blanca2 caja-opciones";
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.caja-naranja-conocenos {
+    grid-area: caja-naranja;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+.video-caja-naranja {
+    align-self: center;
+}
+
+.caja-blanca-conocenos {
+    grid-area: caja-blanca;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.conocenos1 {
+    grid-area: parrafo1;
+    font-size: 15px;
+}
+
+.conocenos2 {
+    grid-area: parrafo2;
+    font-size: 15px;
+}
+
+.caja-blanca-conocenos2 {
+    grid-area: caja-blanca2;
+}
+
+.opciones {
+    grid-area: caja-opciones;
+    background-color: orange;
+    border-radius: 25px;
+}
+
+@media (max-width:600px) {
+
+    .contenido-conocenos {
+        width: 70%;
+        max-width: 600px;
+        margin: auto;
+        display: grid;
+        gap: 1.2em;
+        grid-template-rows: repeat(5, 15vh);
+        grid-template-areas:
+            "caja-blanca"
+            "caja-naranja"
+            "parrafo1"
+            "parrafo2"
+            "caja-opciones";
+    }
+
+    /*.caja-blanca-conocenos{
+       grid-column: 1/-1;
+    }
+    .caja-naranja-conocenos{
+        grid-column: 1/-1;    
+    }
+    
+    .caja-blanca-conocenos{
+        grid-column: 1/-1;
+    }
+    
+    .caja-blanca-conocenos2{
+        grid-column: 1/-1;
+    }
+
+    .opciones{
+        grid-column: 1/-1;
+    }*/
+}
+
+@media (max-width:850px) {
+
+    .contenido-conocenos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja-naranja-conocenos {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:960px) {
+
+    .contenido-conocenos {
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 280px 1fr 100px;
+        grid-template-rows: repeat(4, 18vh);
+        grid-template-areas:
+            "caja-naranja caja-blanca caja-blanca"
+            "caja-naranja parrafo1 parrafo1"
+            "caja-naranja parrafo2 parrafo2"
+
+            "caja-opciones caja-opciones caja-opciones";
+    }
+
+    .conocenos1 {
+        grid-area: parrafo1;
+        font-size: 10px;
+    }
+
+    .conocenos2 {
+        grid-area: parrafo2;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1200px) {
+    .conocenos1 {
+        grid-area: parrafo1;
+        font-size: 12px;
+    }
+
+    .conocenos2 {
+        grid-area: parrafo2;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/*********************************/
+/* Estilos pagina sostenibilidad */
+/*********************************/
+
+.video-fondo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+/*Estilos pagina innovacion */
+
+
+/*Estilos pagina contacto */
+
+.caja-fondo-contacto {
+    background-image: url("../img/fondo-contacto.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
