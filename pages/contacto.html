@@ -8,6 +8,12 @@
     <title>Contacto | IACSA</title>
     <link rel="stylesheet" href="../ccs/navbar.css">
     <link rel="stylesheet" href="../ccs/styles.css">
+
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
 </head>
 
 <body class="caja-fondo-contacto">
@@ -22,30 +28,55 @@
         </nav>
     </header>
     <main>
-        <h1>CONTACTANOS</h1>
-        <!--Formulario de contacto-->
-        <!--Falta diseño-->
-        <form action="">
-            <div>
-                <label for="nombre">Nombre</label>
-                <input id="nombre" type="text">
-                <label for="apellido">Apellido</label>
-                <input id="apellido" type="text">
+        <div class="content-contacto">
+            <h1 class="titulo-contacto">CONTACTANOS</h1>
+        <div class="area-contacto">
+            <div class="formulario-contacto">
+                <h2>Escríbenos</h2>
+                <!--Formulario de contacto-->
+                <form action="">
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre">
+                    </p>
+
+                    <p>
+                        <label for="apellido">Apellido</label>
+                        <input id="apellido" type="text" name="apellido">
+                    </p>
+
+                    <p>
+                        <label for="email">Correo Electrónico</label>
+                        <input id="email" type="email" name="email">
+                    </p>
+
+                    <p>
+                        <label for="tel">Telefono</label>
+                        <input id="tel" type="tel" name="tel">
+                    </p>
+                    <p class="bloque">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" cols="30" rows="10"></textarea>
+                    </p>
+                    <p class="bloque">
+                        <button type="submit">Enviar</button>
+                    </p>
+
+                    <!--Seccion de Informacion lateral derecho -->
+                </form>
             </div>
-            <div>
-                <label for="email">Correo Electrónico</label>
-                <input id="email" type="email">
-                <label for="tel">Telefono</label>
-                <input id="tel" type="tel">
+            <div class="info-contacto">
+                <h3>Mas Información</h3>
+                <ul>
+                    <li>Ubicación</li>
+                    <li>Email</li>
+                    <li>Telefono</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at quam nisi asperiores eligendi minima similique quis quibusdam ex natus!
+                </p>
+                <h3>Industrial Aceitera del Casanare S.A.</h3>
             </div>
-            <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensa" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
     </main>
 
 </body>
