@@ -187,34 +187,86 @@
     z-index: -1;
 }
 
-.container{
-    width: 90%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    display: grid;
-    gap: 1.6em;
-    grid-template-columns: repeat(2, 1fr);
+.content-sostenibilidad{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
 }
 
-.container .header{
-    grid-column: span 2;
-}
-
-.container .content{
-    grid-column: 1;
-}
-
-.content .article{
-    background-color: rgba(57, 157, 40, 0.6); ;
+.titulo-sostenibilidad{
+    text-align: center;
+    font-size: 2.5em;
     color: white;
-    margin-top: 20px;
 }
 
-.container .sidebar{
-    grid-column: 2;
-    background-color: rgba(255, 255, 255, 0.6);
-    margin-top: 10;
+.area-sostenibilidad{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
+
+.area-sostenibilidad > * {
+    padding: 1.5em;
+}
+
+.caja-politica-sostenibilidad{
+    background: green;
+    color: white;
+}
+
+.descripcion-politicas-sostenibilidad{
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 1em;
+}
+
+.descripcion-politicas-sostenibilidad h1,
+.descripcion-politicas-sostenibilidad h2,
+.descripcion-politicas-sostenibilidad p{
+    width: 100%;
+    padding: 0.25em;
+}
+
+.descripcion-politicas-sostenibilidad p{
+    text-align: justify;
+}
+
+.caja-enlaces-sostenibilidad{
+    justify-content: center;
+}
+
+.enlaces-sostenibilidad{
+    background: orange;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.enlaces-sostenibilidad ul{
+    list-style: none;
+}
+
+.enlaces-sostenibilidad ul li{
+    padding: 0.3em;
+}
+
+@media(min-width: 800px){
+
+    .area-sostenibilidad{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .caja-enlaces-sostenibilidad{
+        display: flex;
+        align-items: center;
+        border-radius: 0 25px 25px 0;
+    }
+
+    .enlaces-sostenibilidad ul li{
+        padding: 0.7em;
+    }
+}
+
+
 
 /*****************************/
 /* Estilos pagina innovacion */
@@ -256,7 +308,6 @@
 .formulario-contacto{
     background: rgba(255, 255, 255, 0.4);
 }
-
 
 .formulario-contacto form p{
     margin: 0;
