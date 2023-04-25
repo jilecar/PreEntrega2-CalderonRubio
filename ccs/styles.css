@@ -77,165 +77,100 @@
     background-image: url("../img/fondo-conocenos.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+}
+
+.content-conocenos{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
 }
 
 .titulo-conocenos {
-    color: gray;
+    color: rgb(81, 80, 80);
     text-align: center;
+    font-size: 2em;
 }
 
 .subtitulo-conocenos {
-    color: green;
+    color: rgb(2, 114, 2);
     text-align: center;
+    font-size: 1.5em;
 }
 
-.contenido-conocenos {
-    width: 80%;
-    max-width: 1000px;
-    margin: auto;
-    display: grid;
-    gap: 1.6em;
-    grid-template-columns: 280px 1fr 100px;
-    grid-template-rows: repeat(4, 15vh);
-    grid-template-areas:
-        "caja-naranja caja-blanca caja-blanca"
-        "caja-naranja parrafo1 caja-opciones"
-        "caja-naranja parrafo2 caja-opciones"
-        "caja-naranja caja-blanca2 caja-opciones";
-    background-color: rgba(255, 255, 255, 0.6);
+.area-conocenos > *{
+    padding: 1em;
 }
 
-.caja-naranja-conocenos {
-    grid-area: caja-naranja;
-    background-color: orange;
-    display: flex;
+.caja-video-conocenos{
+    text-align: center;
+    background: orange;
+}
+
+.video2-conocenos{
+    width: 300px;
+    height: 300px;
+}
+
+.descripcion-conocenos{
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 1em;
+}
+
+.descripcion-conocenos h1,
+.descripcion-conocenos h2,
+.descripcion-conocenos p{
+    width: 100%;
+    padding: 0.25em;
+}
+
+.descripcion-conocenos p{
+    text-align: justify;
+}
+
+.caja-enlaces-conocenos{
+    background: rgba(255, 255, 255, 0.4);
     justify-content: center;
 }
 
-.video-caja-naranja {
-    align-self: center;
+.enlaces-conocenos{
+    background: orange;
+    text-align: center;
+    border-radius: 35px;
 }
 
-.caja-blanca-conocenos {
-    grid-area: caja-blanca;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+.enlaces-conocenos ul{
+    list-style: none;
 }
 
-.conocenos1 {
-    grid-area: parrafo1;
-    font-size: 15px;
+.enlaces-conocenos ul li{
+    padding: 0.3em;
 }
 
-.conocenos2 {
-    grid-area: parrafo2;
-    font-size: 15px;
-}
+@media(min-width: 800px){
 
-.caja-blanca-conocenos2 {
-    grid-area: caja-blanca2;
-}
-
-.opciones {
-    grid-area: caja-opciones;
-    background-color: orange;
-    border-radius: 25px;
-}
-
-@media (max-width:600px) {
-
-    .contenido-conocenos {
-        width: 70%;
-        max-width: 600px;
-        margin: auto;
+    .area-conocenos{
         display: grid;
-        gap: 1.2em;
-        grid-template-rows: repeat(5, 15vh);
-        grid-template-areas:
-            "caja-blanca"
-            "caja-naranja"
-            "parrafo1"
-            "parrafo2"
-            "caja-opciones";
+        grid-template-columns: 1fr 2fr 1fr;
     }
 
-    /*.caja-blanca-conocenos{
-       grid-column: 1/-1;
-    }
-    .caja-naranja-conocenos{
-        grid-column: 1/-1;    
-    }
-    
-    .caja-blanca-conocenos{
-        grid-column: 1/-1;
-    }
-    
-    .caja-blanca-conocenos2{
-        grid-column: 1/-1;
-    }
-
-    .opciones{
-        grid-column: 1/-1;
-    }*/
-}
-
-@media (max-width:850px) {
-
-    .contenido-conocenos {
+    .caja-video-conocenos{
         display: flex;
-        flex-direction: column;
+        align-items: center;
     }
 
-    .caja-naranja-conocenos {
+    .caja-enlaces-conocenos{
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        border-radius: 0 25px 25px 0;
     }
 
-}
-
-@media (max-width:960px) {
-
-    .contenido-conocenos {
-        width: 80%;
-        max-width: 1000px;
-        margin: auto;
-        display: grid;
-        gap: 2em;
-        grid-template-columns: 280px 1fr 100px;
-        grid-template-rows: repeat(4, 18vh);
-        grid-template-areas:
-            "caja-naranja caja-blanca caja-blanca"
-            "caja-naranja parrafo1 parrafo1"
-            "caja-naranja parrafo2 parrafo2"
-
-            "caja-opciones caja-opciones caja-opciones";
-    }
-
-    .conocenos1 {
-        grid-area: parrafo1;
-        font-size: 10px;
-    }
-
-    .conocenos2 {
-        grid-area: parrafo2;
-        font-size: 10px;
+    .enlaces-conocenos ul li{
+        padding: 0.7em;
     }
 }
-
-@media (max-width:1200px) {
-    .conocenos1 {
-        grid-area: parrafo1;
-        font-size: 12px;
-    }
-
-    .conocenos2 {
-        grid-area: parrafo2;
-        font-size: 12px;
-    }
-}
-
-
 
 
 /*********************************/
