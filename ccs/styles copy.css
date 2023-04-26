@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/************************/
+/* Estilos pagina index */
+/************************/
+
+.caja-fondo-index {
+    background-image: url("../img/fondo-index.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-index {
+    width: 150px;
+    height: 120px;
+}
+
+.caja-index {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.titulo-index {
+    font-family: Helvetica bold, calibri, sans-serif;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+.subtitulo-index {
+    font-family: cream cake, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+@media(max-width:600px) {
+    .titulo-index {
+        font-size: 50px;
+    }
+
+    .subtitulo-index {
+        font-size: 25px;
+        justify-content: center;
+    }
+}
+
+.caja-btn-index {
+    display: block;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.btn-index {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/****************************/
+/* Estilos pagina conocenos */
+/****************************/
+
+.caja-fondo-conocenos {
+    background-image: url("../img/fondo-conocenos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.content-conocenos{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.titulo-conocenos {
+    color: rgb(81, 80, 80);
+    text-align: center;
+    font-size: 2em;
+}
+
+.subtitulo-conocenos {
+    color: rgb(2, 114, 2);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.area-conocenos > *{
+    padding: 1em;
+}
+
+.caja-video-conocenos{
+    text-align: center;
+    background: orange;
+}
+
+.video2-conocenos{
+    width: 300px;
+    height: 300px;
+}
+
+.descripcion-conocenos{
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 1em;
+}
+
+.descripcion-conocenos h1,
+.descripcion-conocenos h2,
+.descripcion-conocenos p{
+    width: 100%;
+    padding: 0.25em;
+}
+
+.descripcion-conocenos p{
+    text-align: justify;
+}
+
+.caja-enlaces-conocenos{
+    background: rgba(255, 255, 255, 0.4);
+    justify-content: center;
+}
+
+.iconos-enlaces{
+    width: 50px;
+    height: 50px;
+}
+
+.enlaces-conocenos{
+    background: orange;
+    text-align: center;
+    justify-content: center;
+    border-radius: 35px;
+}
+
+.enlaces-conocenos ul{
+    list-style: none;
+}
+
+.enlaces-conocenos ul li{
+    padding: 0.3em;
+    ;
+}
+
+@media(min-width: 800px){
+
+    .area-conocenos{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .caja-video-conocenos{
+        display: flex;
+        align-items: center;
+    }
+
+    .caja-enlaces-conocenos{
+        display: flex;
+        align-items: center;
+        border-radius: 0 25px 25px 0;
+    }
+
+    .enlaces-conocenos ul li{
+        padding: 0.7em;
+    }
+}
+
+
+/*********************************/
+/* Estilos pagina sostenibilidad */
+/*********************************/
+
+.video-fondo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+.content-sostenibilidad{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.titulo-sostenibilidad{
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+.area-sostenibilidad{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.area-sostenibilidad > * {
+    padding: 1.5em;
+}
+
+.caja-politica-sostenibilidad{
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.descripcion-politicas-sostenibilidad{
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 1em;
+}
+
+.descripcion-politicas-sostenibilidad h1,
+.descripcion-politicas-sostenibilidad h2,
+.descripcion-politicas-sostenibilidad p{
+    width: 100%;
+    padding: 0.25em;
+}
+
+.descripcion-politicas-sostenibilidad p{
+    text-align: justify;
+}
+
+.caja-enlaces-sostenibilidad{
+    justify-content: center;
+}
+
+.enlaces-sostenibilidad{
+    background: orange;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.enlaces-sostenibilidad ul{
+    list-style: none;
+}
+
+.enlaces-sostenibilidad ul li{
+    padding: 0.3em;
+}
+
+@media(min-width: 800px){
+
+    .area-sostenibilidad{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+    }
+
+    .caja-politica-sostenibilidad{
+        border-radius: 25px 0 0 25px;
+    }
+
+    .descripcion-politicas-sostenibilidad{
+        border-radius: 0 25px 25px 0;
+    }
+
+    .caja-enlaces-sostenibilidad{
+        grid-row:1/3 ;
+        grid-column: 3;
+    }
+
+    .caja-enlaces-sostenibilidad{
+        display: flex;
+        align-items: center;
+    }
+
+    .enlaces-sostenibilidad ul li{
+        padding: 1em;
+    }
+}
+
+
+
+/*****************************/
+/* Estilos pagina innovacion */
+/*****************************/
+
+.content-innovacion{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.titulo-innovacion{
+    text-align: center;
+    font-size: 3em;
+    color: orange;
+}
+
+.area-innovacion > *{
+    padding: 1.5em;
+}
+
+.icono-pdf-innovacion{
+    width: 35px;
+    height: 35px;
+}
+
+.descripcion-innovacion{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.linea-innovacion{
+    border-color:  orange;
+}
+
+.descripcion-innovacion p,
+.descripcion-innovacion ul{
+    width: 100%;
+    padding: 0.7em;
+    text-align: justify;
+}
+
+.descripcion-innovacion ul li{
+    margin-left: 30px;
+    padding: 0.2em;
+}
+
+.enlaces-innovacion{
+    background: orange;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.enlaces-innovacion ul{
+    list-style: none;
+    padding: 0;
+}
+
+.enlaces-innovacion ul li{
+    padding: 0.3em;
+}
+
+@media(min-width: 800px){
+
+    .area-innovacion{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    .descripcion-innovacion{
+        border-radius: 25px 25px 25px 25px;
+    }
+
+    .caja-enlaces-innovacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caja-enlaces-innovacion ul li{
+        padding: 0.7em;
+    }
+}
+
+
+/***************************/
+/* Estilos pagina contacto */
+/***************************/
+
+.caja-fondo-contacto {
+    background-image: url("../img/fondo-contacto.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content-contacto{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.titulo-contacto{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+}
+
+.area-contacto{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.area-contacto > * {
+    padding: 1.5em;
+}
+
+.formulario-contacto{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.formulario-contacto form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario-contacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto form .bloque{
+    grid-column: 1 / 3;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea{
+width: 100%;
+padding: 0.7em;
+border: none;
+background: none;
+outline: 0;
+border-bottom: 1px solid orange;
+}
+
+.formulario-contacto form button{
+    background: green;
+    border: 0;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.formulario-contacto form button:hover,
+.formulario-contacto form button:focus{
+    background: orange;
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.info-contacto{
+    background: orange;
+}
+
+.info-contacto h3,
+.info-contacto ul,
+.info-contacto p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.info-contacto ul{
+    list-style: none;
+    padding: 0;
+}
+
+.info-contacto ul li{
+    padding: 0.3em;
+}
+
+.iconos-contacto{
+    width: 20px;
+    height: 30px;
+}
+
+@media(min-width: 700px){
+    .area-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .area-contacto{
+         padding: 0.1em;
+    }
+
+    .info-contacto h3,
+    .info-contacto ul,
+    .info-contacto p{
+        padding: 1em;
+        text-align: left;
+    }
+}
