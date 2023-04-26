@@ -135,9 +135,15 @@
     justify-content: center;
 }
 
+.iconos-enlaces{
+    width: 50px;
+    height: 50px;
+}
+
 .enlaces-conocenos{
     background: orange;
     text-align: center;
+    justify-content: center;
     border-radius: 35px;
 }
 
@@ -147,6 +153,7 @@
 
 .enlaces-conocenos ul li{
     padding: 0.3em;
+    ;
 }
 
 @media(min-width: 800px){
@@ -258,6 +265,14 @@
         gap: 20px;
     }
 
+    .caja-politica-sostenibilidad{
+        border-radius: 25px 0 0 25px;
+    }
+
+    .descripcion-politicas-sostenibilidad{
+        border-radius: 0 25px 25px 0;
+    }
+
     .caja-enlaces-sostenibilidad{
         grid-row:1/3 ;
         grid-column: 3;
@@ -266,11 +281,10 @@
     .caja-enlaces-sostenibilidad{
         display: flex;
         align-items: center;
-        border-radius: 0 25px 25px 0;
     }
 
     .enlaces-sostenibilidad ul li{
-        padding: 0.7em;
+        padding: 1em;
     }
 }
 
@@ -279,6 +293,86 @@
 /*****************************/
 /* Estilos pagina innovacion */
 /*****************************/
+
+.content-innovacion{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.titulo-innovacion{
+    text-align: center;
+    font-size: 3em;
+    color: orange;
+}
+
+.area-innovacion > *{
+    padding: 1.5em;
+}
+
+.icono-pdf-innovacion{
+    width: 35px;
+    height: 35px;
+}
+
+.descripcion-innovacion{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.linea-innovacion{
+    border-color:  orange;
+}
+
+.descripcion-innovacion p,
+.descripcion-innovacion ul{
+    width: 100%;
+    padding: 0.7em;
+    text-align: justify;
+}
+
+.descripcion-innovacion ul li{
+    margin-left: 30px;
+    padding: 0.2em;
+}
+
+.enlaces-innovacion{
+    background: orange;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.enlaces-innovacion ul{
+    list-style: none;
+    padding: 0;
+}
+
+.enlaces-innovacion ul li{
+    padding: 0.3em;
+}
+
+@media(min-width: 800px){
+
+    .area-innovacion{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    .descripcion-innovacion{
+        border-radius: 25px 25px 25px 25px;
+    }
+
+    .caja-enlaces-innovacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caja-enlaces-innovacion ul li{
+        padding: 0.7em;
+    }
+}
 
 
 /***************************/
@@ -376,6 +470,11 @@ border-bottom: 1px solid orange;
 
 .info-contacto ul li{
     padding: 0.3em;
+}
+
+.iconos-contacto{
+    width: 20px;
+    height: 30px;
 }
 
 @media(min-width: 700px){
