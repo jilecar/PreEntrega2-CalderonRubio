@@ -1,6 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
+/*aqui solo se colocan los import*/
+
+/*reset o variables*/
+@import "./base";
+
+/*componentes*/
+@import "./components/nav";
+
+/*pages*/
+@import "./pages/conocenos";
+@import "./pages/contacto";
+@import "./pages/index";
+@import "./pages/innovacion";
+@import "./pages/sostenibilidad";

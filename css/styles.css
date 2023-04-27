@@ -1,8 +1,198 @@
+/*aqui solo se colocan los import*/
+/*reset o variables*/
+/*aqui van todos los reset*/
+/*variables, reset generales*/
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+/*componentes*/
+.nav-enlace {
+  display: inline-block;
+  /*background: gray;*/
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.nav-enlace img {
+  width: 60px;
+  height: 55px;
+}
+.nav-enlace:hover {
+  background: orange;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  padding: 70px;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-enlace {
+    margin: 4px 0;
+  }
+}
+/*pages*/
+.caja-fondo-conocenos {
+  background-image: url("../img/fondo-conocenos.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.content-conocenos {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.titulo-conocenos {
+  color: rgb(72, 70, 70);
+  text-align: center;
+  font-size: 2em;
+}
+
+.subtitulo-conocenos {
+  color: rgb(84, 130, 53);
+  text-align: center;
+  font-size: 1.5em;
+  text-shadow: 1px 0px 2px white;
+}
+
+.area-conocenos > * {
+  padding: 1em;
+}
+
+.caja-video-conocenos {
+  text-align: center;
+  background: orange;
+}
+
+.video2-conocenos {
+  width: 300px;
+  height: 300px;
+}
+
+.descripcion-conocenos {
+  background: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  padding: 1em;
+}
+.descripcion-conocenos h1, .descripcion-conocenos h2, .descripcion-conocenos p {
+  width: 100%;
+  padding: 0.25em;
+}
+.descripcion-conocenos p {
+  text-align: justify;
+}
+
+.caja-enlaces-conocenos {
+  background: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+}
+
+.iconos-enlaces {
+  width: 50px;
+  height: 50px;
+}
+
+.enlaces-conocenos {
+  background: orange;
+  text-align: center;
+  justify-content: center;
+  border-radius: 35px;
+}
+.enlaces-conocenos ul {
+  list-style: none;
+}
+.enlaces-conocenos ul li {
+  padding: 0.3em;
+}
+
+@media (min-width: 800px) {
+  .area-conocenos {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .caja-video-conocenos {
+    display: flex;
+    align-items: center;
+  }
+  .caja-enlaces-conocenos {
+    display: flex;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+  }
+  .enlaces-conocenos ul li {
+    padding: 0.7em;
+  }
+}
+.caja-fondo-index {
+  background-image: url("../img/fondo-index.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo-index {
+  width: 150px;
+  height: 120px;
+}
+
+.caja-index {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.titulo-index {
+  font-family: Helvetica bold, calibri, sans-serif;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+}
+
+.subtitulo-index {
+  font-family: cream cake, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  .titulo-index {
+    font-size: 50px;
+  }
+  .subtitulo-index {
+    font-size: 25px;
+    justify-content: center;
+  }
+}
+.caja-btn-index {
+  display: block;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: orange;
+  border-radius: 20px;
+}
+
+.btn-index {
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

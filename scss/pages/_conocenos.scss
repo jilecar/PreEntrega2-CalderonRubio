@@ -1,0 +1,103 @@
+.caja-fondo-conocenos {
+    background-image: url("../img/fondo-conocenos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.content-conocenos{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.titulo-conocenos {
+    color: $titulo-gris;
+    text-align: center;
+    font-size: 2em;
+}
+
+.subtitulo-conocenos {
+    color: $fondo-verde-oscuro;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 0px 2px white;
+}
+
+.area-conocenos > *{
+    padding: 1em;
+}
+
+.caja-video-conocenos{
+    text-align: center;
+    background: orange;
+}
+
+.video2-conocenos{
+    width: 300px;
+    height: 300px;
+}
+
+.descripcion-conocenos{
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 1em;
+
+    h1,h2,p{
+        width: 100%;
+    padding: 0.25em;
+    }
+
+    p{
+        text-align: justify;
+    }
+}
+
+.caja-enlaces-conocenos{
+    background: rgba(255, 255, 255, 0.4);
+    justify-content: center;
+}
+
+.iconos-enlaces{
+    width: 50px;
+    height: 50px;
+}
+
+.enlaces-conocenos{
+    background: orange;
+    text-align: center;
+    justify-content: center;
+    border-radius: 35px;
+
+    ul{
+        list-style: none;
+
+        li{
+            padding: 0.3em;
+        }
+    }
+}
+
+@media(min-width: 800px){
+
+    .area-conocenos{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .caja-video-conocenos{
+        display: flex;
+        align-items: center;
+    }
+
+    .caja-enlaces-conocenos{
+        display: flex;
+        align-items: center;
+        border-radius: 0 25px 25px 0;
+    }
+
+    .enlaces-conocenos ul li{
+        padding: 0.7em;
+    }
+}
