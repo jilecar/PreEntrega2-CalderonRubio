@@ -31,7 +31,7 @@
 
 .caja-video-conocenos{
     text-align: center;
-    background: orange;
+    background: $fondo-naranja;
 }
 
 .video2-conocenos{
@@ -40,7 +40,7 @@
 }
 
 .descripcion-conocenos{
-    background: rgba(255, 255, 255, 0.4);
+    background: $fondo-blanco-transparente;
     margin: 0;
     padding: 1em;
 
@@ -55,7 +55,7 @@
 }
 
 .caja-enlaces-conocenos{
-    background: rgba(255, 255, 255, 0.4);
+    background: $fondo-blanco-transparente;
     justify-content: center;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .enlaces-conocenos{
-    background: orange;
+    background: $fondo-naranja;
     text-align: center;
     justify-content: center;
     border-radius: 35px;

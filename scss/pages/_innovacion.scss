@@ -1,0 +1,68 @@
+.content-innovacion{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.titulo-innovacion{
+    text-align: center;
+    font-size: 3em;
+    color: $titulo-naranja;
+}
+
+.area-innovacion > *{
+    padding: 1.5em;
+}
+
+.descripcion-innovacion{
+    background: $fondo-blanco-transparente;
+    p,ul{
+        width: 100%;
+        padding: 0.7em;
+        text-align: justify;
+    }
+    ul{
+        li{
+            margin-left: 30px;
+            padding: 0.2em;
+        }
+    }
+}
+
+.enlaces-innovacion{
+    background: $fondo-naranja;
+    border-radius: 35px;
+    text-align: center;
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+                padding: 0.3em;
+        }
+    }
+}
+
+@media(min-width: 800px){
+
+    .area-innovacion{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    .descripcion-innovacion{
+        border-radius: 25px 25px 25px 25px;
+    }
+
+    .caja-enlaces-innovacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+            li{
+                padding: 0.7em;
+            }
+        }
+    }
+}
