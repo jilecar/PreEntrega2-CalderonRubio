@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta name="description" content="Empresa dedicada a la producción de aceite de palma, comercializados en el mercado nacional 
     e internacional. Los procesos y actividades se caracterizan por ser innovadores y tecnológicos.">
@@ -37,7 +38,7 @@
     <header>
         <div class="caja-index">
             <figure>
-                <img src="./img/logo-index.png" class="logo-index" alt="Logo Industrial Aceitera de Casanare">
+                <img src="./img/logo-index.png" data-aos="zoom-out" data-aos-duration="2500" class="logo-index" alt="Logo Industrial Aceitera de Casanare">
             </figure>
         </div>
     </header>
@@ -46,10 +47,13 @@
         <h1 class="titulo-index">BIENVENIDOS</h1>
         <h2 class="subtitulo-index">Industrial Aceitera de Casanare S.A.</h2>
         <div class="caja-btn-index">
-            <a href="pages/conocenos.html" class="btn-index">CONOCENOS</a>
+            <a href="pages/conocenos.html" class="btn-index" aria-label="Clic para conocernos">CONÓCENOS</a>
         </div>
     </main>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
